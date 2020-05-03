@@ -16,16 +16,26 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @RequestMapping("/display")
-    public String display(Model model){
-        User user = userService.getOneUser();
-        model.addAttribute("users",user);
-        return "display";
+    @RequestMapping("/login")
+    public String signIn(){
+        return "sign-in";
     }
 
-    @RequestMapping("profile")
-    public String getOneProfile(){
-        return "profile";
+    @RequestMapping("/to-myinfo")
+    public String toInto(){
+        return "myinfo";
     }
+
+    @RequestMapping("/to-myitems")
+    public String toMyItems(){
+        return "myitems";
+    }
+
+    @RequestMapping("/profile")
+    public String userProfile(){
+        return "user_profile";
+    }
+
+
 
 }
