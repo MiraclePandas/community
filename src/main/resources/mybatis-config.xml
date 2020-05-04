@@ -8,5 +8,10 @@
     </typeAliases>
     <mappers>
         <mapper resource="mapper/UserMapper.xml"/>
+        <mapper resource="mapper/ItemMapper.xml"/>
+        <mapper resource="mapper/FriendMapper.xml"/>
+        <mapper resource="mapper/UserProfileMapper.xml"/>
+        <mapper resource="mapper/BehaviorMapper.xml"/>
+        <mapper resource="mapper/CommentMapper.xml"/>
     </mappers>
 </configuration>

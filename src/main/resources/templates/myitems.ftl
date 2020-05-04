@@ -204,11 +204,11 @@
 </nav>
 
 <!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- slick Slider JS-->
-<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+<script type="text/javascript" src="../vendor/slick/slick.min.js"></script>
 <!-- Custom scripts for all pages-->
-<script src="js/osahan.js"></script>
+<script src="../js/osahan.js"></script>
 </body>
 </html>

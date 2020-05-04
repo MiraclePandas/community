@@ -15,8 +15,8 @@ public class UserServiceImpl implements UserService {
     UserDao userDao;
 
     @Override
-    public User getOneUser() {
-        User user = userDao.getAuser();
+    public User getOneUser(String userid) {
+        User user = userDao.queryOneUser("tiger");
         return user;
     }
 }
