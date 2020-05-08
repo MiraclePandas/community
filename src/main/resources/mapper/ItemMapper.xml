@@ -6,7 +6,18 @@
     <select id="queryOneItem" resultType="Item" parameterType="String">
            select * from items where itemid=#{itemid};
     </select>
+
     <select id="queryAllItems" resultType="Item">
         select * from items;
     </select>
+
+    <insert id="insertOneItem" parameterType="Item">
+        insert into items value (#{itemid},#{userid},#{title},
+        #{content},#{submit_time},#{item_photo_url});
+    </insert>
+
+    <select id="queryAllItemByUserid" parameterType="String" resultType="Item">
+        select * from items where userid=#{userid};
+    </select>
+
 </mapper>

@@ -6,12 +6,12 @@
       <meta name="description" content="">
       <meta name="author" content="">
       <link rel="icon" type="image/png" href="../img/fav.png">
-      <title></title>
+      <title>我的信息</title>
       <!-- Slick Slider -->
-      <link rel="stylesheet" type="text/css" href="../vendor/slick/slick.min.css"/>
-      <link rel="stylesheet" type="text/css" href="../vendor/slick/slick-theme.min.css"/>
-      <!-- Feather Icon-->
-      <link href="../vendor/icons/feather.css" rel="stylesheet" type="text/css">
+<#--      <link rel="stylesheet" type="text/css" href="../vendor/slick/slick.min.css"/>-->
+<#--      <link rel="stylesheet" type="text/css" href="../vendor/slick/slick-theme.min.css"/>-->
+<#--      <!-- Feather Icon&ndash;&gt;-->
+<#--      <link href="../vendor/icons/feather.css" rel="stylesheet" type="text/css">-->
       <!-- Bootstrap core CSS -->
       <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- Custom styles for this template -->
@@ -76,8 +76,8 @@
       <script src="../vendor/jquery/jquery.min.js"></script>
       <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <!-- slick Slider JS-->
-      <script type="text/javascript" src="../vendor/slick/slick.min.js"></script>
-      <!-- Custom scripts for all pages-->
-      <script src="../js/osahan.js"></script>
+<#--      <script type="text/javascript" src="../vendor/slick/slick.min.js"></script>-->
+<#--      <!-- Custom scripts for all pages&ndash;&gt;-->
+<#--      <script src="../js/osahan.js"></script>-->
    </body>
 </html>

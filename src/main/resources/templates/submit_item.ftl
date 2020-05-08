@@ -8,8 +8,8 @@
     <link rel="icon" type="image/png" href="../img/fav.png">
     <title></title>
     <!-- Slick Slider -->
-    <link rel="stylesheet" type="text/css" href="../vendor/slick/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="../vendor/slick/slick-theme.min.css"/>
+<#--    <link rel="stylesheet" type="text/css" href="../vendor/slick/slick.min.css"/>-->
+<#--    <link rel="stylesheet" type="text/css" href="../vendor/slick/slick-theme.min.css"/>-->
     <!-- Feather Icon-->
     <link href="../vendor/icons/feather.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap core CSS -->
@@ -25,7 +25,7 @@
         </a>
         <form class="d-none d-sm-inline-block form-inline mr-auto my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-                <input type="text" class="form-control shadow-none border-0" placeholder="Search people, jobs & more..." aria-label="Search" aria-describedby="basic-addon2">
+                <input type="text" class="form-control shadow-none border-0" placeholder="搜索帖子、作者" aria-label="Search" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <button class="btn" type="button">
                         <i class="feather-search"></i>
@@ -53,28 +53,26 @@
                     </form>
                 </div>
             </li>
-
-            <#--               发帖-->
+            <#--            发帖-->
             <li class="nav-item">
                 <a class="nav-link" href="/operate/to-submit-item"><i class="feather-briefcase mr-2"></i><span class="d-none d-lg-inline">发帖</span></a>
             </li>
-            <#--               我的帖子-->
+            <#--            我的帖子-->
             <li class="nav-item">
                 <a class="nav-link" href="/user/to-myitems"><i class="feather-users mr-2"></i><span class="d-none d-lg-inline">我的帖子</span></a>
             </li>
-            <#--               信息-->
+            <#--            信息-->
             <li class="nav-item dropdown mr-2">
                 <a class="nav-link dropdown-toggle pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="feather-file-text mr-2"></i><span class="d-none d-lg-inline">信息</span>
+                    <i class="feather-file-text mr-2"></i><span class="d-none d-lg-inline">说明</span>
                 </a>
                 <!-- Dropdown - User Information -->
                 <div class="dropdown-menu dropdown-menu-right shadow-sm">
-                    <a class="dropdown-item" href="/user/to-myinfo"><i class="feather-briefcase mr-1"></i> Jobs</a>
-                    <a class="dropdown-item" href="profile.html"><i class="feather-user mr-1"></i> Profile</a>
-                    <a class="dropdown-item" href="connection.html"><i class="feather-users mr-1"></i> Connection</a>
+                    <a class="dropdown-item" href="/user/user-profile-disc"><i class="feather-briefcase mr-1"></i> Jobs</a>
+                    <a class="dropdown-item" href="/user/item-profile-disc"><i class="feather-user mr-1"></i> Profile</a>
                 </div>
             </li>
-            <#--               我对别人的评论-->
+            <#--            我对别人的评论-->
             <li class="nav-item dropdown no-arrow mx-1 osahan-list-dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="feather-message-square"></i>
@@ -88,7 +86,7 @@
                     </h6>
                     <a class="dropdown-item d-flex align-items-center" href="#">
                         <div class="dropdown-list-image mr-3">
-                            <img class="rounded-circle" src="img/p1.png" alt="">
+                            <img class="rounded-circle" src="../img/p1.png" alt="">
                             <div class="status-indicator bg-success"></div>
                         </div>
                         <div class="font-weight-bold overflow-hidden">
@@ -98,7 +96,7 @@
                     </a>
                     <a class="dropdown-item d-flex align-items-center" href="#">
                         <div class="dropdown-list-image mr-3">
-                            <img class="rounded-circle" src="../img/p2.png" alt="">
+                            <img class="rounded-circle" src="img/p2.png" alt="">
                             <div class="status-indicator"></div>
                         </div>
                         <div class="overflow-hidden">
@@ -106,30 +104,10 @@
                             <div class="small text-gray-500">Jae Chun · 1d</div>
                         </div>
                     </a>
-                    <a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="dropdown-list-image mr-3">
-                            <img class="rounded-circle" src="img/p3.png" alt="">
-                            <div class="status-indicator bg-warning"></div>
-                        </div>
-                        <div class="overflow-hidden">
-                            <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
-                            <div class="small text-gray-500">Morgan Alvarez · 2d</div>
-                        </div>
-                    </a>
-                    <a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="dropdown-list-image mr-3">
-                            <img class="rounded-circle" src="img/p4.png" alt="">
-                            <div class="status-indicator bg-success"></div>
-                        </div>
-                        <div class="overflow-hidden">
-                            <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
-                            <div class="small text-gray-500">Chicken the Dog · 2w</div>
-                        </div>
-                    </a>
                     <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
                 </div>
             </li>
-            <#--               别人对我的评论-->
+            <#--            别人对我的评论--->
             <li class="nav-item dropdown no-arrow mx-1 osahan-list-dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="feather-bell"></i>
@@ -163,21 +141,10 @@
                             $290.29 has been deposited into your account!
                         </div>
                     </a>
-                    <a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="mr-3">
-                            <div class="icon-circle bg-warning">
-                                <i class="feather-folder text-white"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="small text-gray-500">December 2, 2019</div>
-                            Spending Alert: We've noticed unusually high spending for your account.
-                        </div>
-                    </a>
                     <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                 </div>
             </li>
-            <!-- Nav Item - User Information -->
+            <!-- 用户信息Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow ml-1 osahan-profile-dropdown">
                 <a class="nav-link dropdown-toggle pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img class="img-profile rounded-circle" src="../img/p13.png">
@@ -195,8 +162,8 @@
                         </div>
                     </div>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="profile.html"><i class="feather-user mr-1"></i> Profile</a>
-                    <a class="dropdown-item" href="sign-in.html"><i class="feather-log-out mr-1"></i> Logout</a>
+                    <a class="dropdown-item" href="/user/to-myinfo"><i class="feather-user mr-1"></i> 我的信息</a>
+                    <a class="dropdown-item" href="/user/login-out"><i class="feather-log-out mr-1"></i> 退出</a>
                 </div>
             </li>
         </ul>
@@ -211,15 +178,14 @@
 <#--                    <div class="row">-->
 <#--                        <img src="../img/p13.png" class="img-fluid mx-auto rounded-circle" alt="Responsive image">-->
 <#--                    </div>-->
-                    <h5 class="text-center font-weight-bold text-dark mb-1 mt-4">账号</h5>
-                    <h4 class="text-center">Say your thoughts</h4>
+                    <h4 class="text-center">账号</h4>
+                    <h4 class="text-center">有趣的灵魂，延绵伟大的思想</h4>
                     <br>
-                    <form action="/operate/to-submit-item" >
+                    <form action="/operate/submit-item" method="post" enctype="multipart/form-data">
+                        <input hidden="true" type="text" name="userid" value="tiger" />
                         <div class="row">
-<#--                                <div class="col-12">-->
-<#--                                    <label class="mb-1">账号</label>-->
-                            标题：<input type="email" class="form-control" placeholder="昵称"/>
-<#--                                </div>-->
+                            <label class="mb-1">标题：</label>
+                            <input type="text" name="title"  class="form-control" placeholder="在此输入标题"/>
                         </div>
                         <br>
                         <div class="box shadow-sm border rounded bg-white mb-3 osahan-share-post">
@@ -227,20 +193,30 @@
                                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                     <div class="p-3 d-flex align-items-center w-100" href="#">
                                         <div class="dropdown-list-image mr-3">
-                                            <img class="rounded-circle" src="img/user.png" alt="">
+                                            <img class="rounded-circle" src="../img/user.png" alt="">
                                             <div class="status-indicator bg-success"></div>
                                         </div>
                                         <div class="w-100">
-                                            <textarea placeholder="写下你的想法..." class="form-control border-0 p-0 shadow-none" rows="4"></textarea>
+                                            <textarea name="content" placeholder="写下你的想法..." class="form-control border-0 p-0 shadow-none" rows="6"></textarea>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+<#--                            添加图片-->
+                            <div class="tab-content" id="myTabContent">
+                                请选取一个图像文件: <input type="file" id="file" name="itemPhoto"/>
+                                <div id="result"  ></div>
+                            </div>
+
                             <div class="border-top p-3 d-flex align-items-center">
-                                <div class="mr-auto"><a href="#" class="text-link small"><i class="feather-map-pin"></i> 添加图片</a></div>
+                                <div class="mr-auto">
+                                    <a href="#" class="text-link small">
+<#--                                        <i class="feather-map-pin"></i> 添加图片-->
+                                    </a>
+                                </div>
                                 <div class="flex-shrink-1">
-                                    <button type="button" class="btn btn-light btn-sm">撤销</button>
-                                    <button type="button" class="btn btn-primary btn-sm">提交</button>
+                                    <input type="submit" value="提交" class="btn btn-light btn-sm" />
+                                    <input type="reset" value="重置" class="btn btn-primary btn-sm" />
                                 </div>
                             </div>
                         </div>
@@ -253,9 +229,34 @@
 <!-- Bootstrap core JavaScript -->
 <script src="../vendor/jquery/jquery.min.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- slick Slider JS-->
-<script type="text/javascript" src="../vendor/slick/slick.min.js"></script>
-<!-- Custom scripts for all pages-->
-<script src="../js/osahan.js"></script>
+<#--<!-- slick Slider JS&ndash;&gt;-->
+<#--<script type="text/javascript" src="../vendor/slick/slick.min.js"></script>-->
+<#--<!-- Custom scripts for all pages&ndash;&gt;-->
+<#--<script src="../js/osahan.js"></script>-->
+<script type="text/javascript">
+    function ProcessFile(e) {
+        var file = document.getElementById('file').files[0];
+        if (file) {
+            var reader = new FileReader();
+            reader.onload = function (event) {
+                var txt = event.target.result;
+                var img = document.createElement("img");
+                img.src = txt;//将图片base64字符串赋值给img的src
+                img.width = 200;
+                img.height = 100;
+                // console.log(txt);
+                document.getElementById("result").appendChild(img);
+            };
+        }
+        reader.readAsDataURL(file);
+    }
+
+    function contentLoaded() {
+        document.getElementById('file').addEventListener('change',
+            ProcessFile, false);
+    }
+
+    window.addEventListener("DOMContentLoaded", contentLoaded, false);
+</script>
 </body>
 </html>

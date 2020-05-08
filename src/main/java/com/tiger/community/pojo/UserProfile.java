@@ -3,7 +3,7 @@ package com.tiger.community.pojo;
 public class UserProfile {
     String userid;
     String username;
-    Integer sex;
+    String  sex;
     Integer age;
     String self_introduction;
     String skill;
@@ -26,11 +26,11 @@ public class UserProfile {
         this.username = username;
     }
 
-    public Integer getSex() {
+    public String getSex() {
         return sex;
     }
 
-    public void setSex(Integer sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 
@@ -79,7 +79,7 @@ public class UserProfile {
         return "UserProfile{" +
                 "userid='" + userid + '\'' +
                 ", username='" + username + '\'' +
-                ", sex=" + sex +
+                ", sex='" + sex + '\'' +
                 ", age=" + age +
                 ", self_introduction='" + self_introduction + '\'' +
                 ", skill='" + skill + '\'' +

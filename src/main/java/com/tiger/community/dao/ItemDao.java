@@ -10,5 +10,8 @@ import java.util.List;
 @Mapper
 public interface ItemDao {
     Item queryOneItem(String itemid);
+    List<Item>  queryAllItemByUserid(String userid);
     List<Item> queryAllItems();
+    Integer insertOneItem(Item item);
+
 }

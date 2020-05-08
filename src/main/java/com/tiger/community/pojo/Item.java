@@ -8,6 +8,15 @@ public class Item {
     String submit_time;
     String item_photo_url;
 
+    public Item(String itemid, String userid, String title, String content, String submit_time, String item_photo_url) {
+        this.itemid = itemid;
+        this.userid = userid;
+        this.title = title;
+        this.content = content;
+        this.submit_time = submit_time;
+        this.item_photo_url = item_photo_url;
+    }
+
     public String getItemid() {
         return itemid;
     }

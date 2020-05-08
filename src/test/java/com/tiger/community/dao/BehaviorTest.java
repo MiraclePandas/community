@@ -13,7 +13,7 @@ public class BehaviorTest {
 
     @Test
     public void testBehavior(){
-        Behavior behavior = behaviorDao.queryOneBehavior("2");
+        Behavior behavior = behaviorDao.queryOneBehavior("2","24");
         System.out.println(behavior);
     }
 }

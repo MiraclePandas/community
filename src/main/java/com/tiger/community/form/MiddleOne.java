@@ -19,7 +19,12 @@ public class MiddleOne {
     List<String>  comment_content;
     List<String>  comment_time;
 
-    public MiddleOne(String userid, String itemid, String user_photo_url, String username, String title, String content, String item_photo_url, String submit_time, Integer fav, Integer comment_num, Integer share, List<String> comment_user, List<String> comment_content, List<String> comment_time) {
+    public MiddleOne(String userid, String itemid, String user_photo_url,
+                     String username, String title, String content,
+                     String item_photo_url, String submit_time,
+                     Integer fav, Integer comment_num, Integer share,
+                     List<String> comment_user, List<String> comment_content,
+                     List<String> comment_time) {
         this.userid = userid;
         this.itemid = itemid;
         this.user_photo_url = user_photo_url;

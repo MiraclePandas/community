@@ -6,4 +6,12 @@
     <select id="queryOneUserProfile" resultType="UserProfile" parameterType="String">
         select * from user_profiles where userid=#{userid};
     </select>
+
+    <update id="updateOneUserProfile" parameterType="UserProfile">
+        update user_profiles set username = #{username},
+         sex =#{sex}, age=#{age},skill=#{skill},education=#{education},
+          self_introduction=#{self_introduction},
+          user_photo_url=#{user_photo_url}
+          where userid=#{userid};
+    </update>
 </mapper>

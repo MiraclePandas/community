@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository;
 @Mapper
 public interface UserProfileDao {
     UserProfile queryOneUserProfile(String userid);
+    Integer updateOneUserProfile(UserProfile userProfile);
 }
